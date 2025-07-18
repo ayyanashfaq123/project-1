@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-color: black; */
+}
+body{
+    background-color: black;
+    color: white;
 }
 nav{
     width: 100%;
     background-color: black;
-    color: white;
     font-size: 25px;
     height: 20vh;
     align-content: center;
@@ -18,7 +22,7 @@ nav{
     justify-content: space-between;
 }
 .nav-left {
-    color: white;
+    /* color: white; */
     margin-top: 10px;
 }
 .nav-center{
@@ -57,21 +61,351 @@ nav{
     font-size: 22px;
 }
 .nav-right button:hover{
-    background-color: rgb(78, 77, 77);
+    background-color: rgb(60, 59, 59);
 }
-section{
+.sec-1{
     display: flex;
+    margin-top: 10%;
+    color: white;
 }
 .sec-left{
-    width: 65%;
+   display: flex;
+   width: 65%;
 }
 .left-1{
-    background-image: url("./intro-pic-primary.jpg");
-    width: 45%;
-    height: 80vh;
-    background-size: cover;
-    margin-left: 55%;
+    width: 55%;
+}
+.left-1 h2{
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 5%;
+}
+.left-1 h1{
+    font-size: 133px;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 .left-2{
+    width:45%;
+}
+.left-2 img{
+    width: 100%;
+    height: 80vh;
+    z-index: 1;
+}
+.sec-right{
+    width: 45%;
+}
+.right-1 {
+    width: 90%;
+    margin: auto;
+}
+.right-1 img{
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 5%;
+}
+.right-2 {
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+}
+.right-2 p{
+    width: 90%;
+    font-size: 33px;
+}
+.right-3{
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+}
+.right-3 .sec-link{
+    display: flex;
+    list-style: none;
+    gap: 5%;
+    font-size: 20px;
+    color: rgb(71, 70, 70);
+}
+.sec-link li:hover {
+    color: white;
+}
+.sec-2{
+    margin-top: 10%;
+    display: flex;
+    color: white;
+}
+.sec2-1{
+    width: 50%;
+}
+ .sec2-1 h3{
+    margin-left: 5%;
+    font-size: 30px;
+    color: rgb(71, 70, 70);
+} 
+.sec2-1 h1{
+    font-size: 65px;
+    margin-left: 5%;
+}
+.sec2-1 img{
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.sec2-2{
+    width: 50%;
+
+}
+.sec2-2 p{
+    width: 90%;
+    font-size: 20px;
+    margin-top: 5%;
+}
+.sec-3{
+    display: flex;
+    margin-top: 10%;
+}
+.sec3-1{
+    width: 50%;
+}
+.sec3-1 h3{
+    margin-left: 5%;
+    font-size: 30px;
+    color: rgb(71, 70, 70);
+}
+.sec3-1 h1{
+    margin-left: 5%;
+    font-size: 65px;
+    margin-bottom: 5%;
+}
+.sec3-2 button{
+    display: flex;
+    width: 50%;
+    gap: 5%;
+    padding: 20px;
+    margin-left: 5%;
+    background-color: black;
+    color: white;
+    border: 0;
+}
+.sec3-2 button h3{
+    font-size: 20px;
+}
+.sec3-2 button:hover{
+    background-color: cadetblue;
+    transition-duration:2s;
+}
+.sec3-right h1{
+    font-size: 30px;
+}
+.right-sec{
+    width: 80%;
+    display: flex;
+    gap: 5%;
+    margin-top: 5%;
+    border: 2px solid rgb(71, 70, 70);
+    background-color: rgb(71, 70, 70);
+    color: white;
+    padding: 5%;
+}
+.right-sec:hover{
+    transform: scale(1.025);
+}
+
+.right-sec1{
+    width: 80%;  
+}
+.right-color{
+    width: 80%;
+    display: flex;
+    gap: 5%;
+    margin-top: 5%;
+    padding: 5%;
+}
+.right-sec1:hover{
+     transform: scale(1.025);
+}
+.right-color:hover{
+     transform: scale(1.025);
+}
+.sec-4{
+    margin-top: 10%;
+}
+.left-4 h3{
+    margin-left: 5%;
+    font-size: 30px;
+    color: rgb(71, 70, 70);
+}
+.left-4 h1{
+    font-size: 65px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.sec4-pic{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pic{
+    width: 33%;
+    position: relative;
+    transition: all 0.3s linear 0s;
+}
+.pic .over-lay{
     position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 23, 23, 0.626);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    opacity: 0;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+}
+.pic:hover{
+    transform: scale(1.025);
+}
+.pic:hover .over-lay{
+    opacity: 1;
+}
+.head h1{
+    font-size: 55px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+.sec-5{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+}
+.sec5-left{
+    display: flex;
+    width: 35%;
+    gap: 5%;
+}
+.sec5-1 img{
+    width: 100%;
+    height: 15vh;
+    border: 10px solid rgb(71, 70, 70);
+    border-radius: 50%;
+}
+.sec5-2{
+    align-content: center;
+}
+.sec-6{
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+.sec6-p {
+    width:35%;
+    font-size: 25px;
+    margin-top: 3%;
+}
+.sec6-p p{
+    width: 91%;
+}
+.sec-7{
+    background-color:rgb(71, 70, 70) ;
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin: auto;
+    margin-top: 10%;
+}
+.sec-7 p{
+    width: 60%;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+}
+.sec7-3 input{
+    padding: 5%;
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+}
+.sec-7 button{
+    padding: 5%;
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    margin-top: 5%;
+    align-self: center;
+    margin-left: 4%;
+    background-color: rgb(132, 210, 213);
+}
+.sec-7 button:hover{
+    background-color: cadetblue;
+}
+.sec-8{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 10%;
+}
+.sec8-1{
+    width: 20%;
+    font-size: 25px;
+    margin-top: 1%;
+}
+.sec8-1 ul{
+    display: flex;
+    list-style: none;
+    gap: 3%;
+    font-size: 18px;
+    margin-top: 3%;
+}
+.sec8-2{
+    width: 40%;
+}
+.sec8-cen h3{
+    font-size: 23px;
+    color: cadetblue;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+.sec8-cen p{
+    font-size: 20px;
+}
+.sec8-3{
+    width: 35%;
+}
+.sec8-cen span a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 3%;
+    color: white;
+}
+.sec8-cen a:hover{
+    color: rgb(71, 70, 70);
+}
+.sec8-cen span p{
+    font-size: 20px;
+    margin-top: 4%;
+}
+footer{
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    font-size: 20px;
+    color: rgb(71, 70, 70);
+    margin-bottom: 3%;
+}
+footer span{
+    color: white;
 }
